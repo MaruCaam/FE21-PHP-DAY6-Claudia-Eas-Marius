@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Benne", serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Benne", serif;
+}
+
+body {
+  background: #7c5d39;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7c5d39), to(#ffae00));
+  background: linear-gradient(180deg, #7c5d39 0%, #ffae00 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+header {
+  margin-bottom: 5vh;
+  background: #201b19;
+}
+
+.card {
+  font-size: large;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+h1 {
+  color: goldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  color: goldenrod !important;
+}
+
+nav {
+  font-size: xx-large !important;
+  font-family: "Benne", serif;
+}
+
+ul {
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.titles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#titles {
+  font-size: xx-large;
+  background: #964400;
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+}
+
+#titles2 {
+  font-size: xx-large;
+  background: #964400;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+footer {
+  margin-top: 5vh;
+  background-color: #201b19;
+}
+
+.rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 9vh;
+}
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked) > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #964400;
+}
+
+.rate:not(:checked) > label:before {
+  content: "★";
+}
+
+.rate > input:checked ~ label {
+  color: goldenrod;
+}
+
+.rate:not(:checked) > label:hover {
+  color: goldenrod;
+}
+
+.rate > input:checked + label:hover {
+  color: goldenrod;
+}
+
+h3 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #964400 !important;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  color: gold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sendReview {
+  margin-top: 5vh;
+}
+
+.mb-3 {
+  margin-top: 3vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#sendButton {
+  text-align: center;
+  width: 100%;
+  color: #000;
+}
+
+.reviewCard {
+  margin-top: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+}
+
+#aboutList {
+  color: black !important;
+  -webkit-text-decoration: black !important;
+          text-decoration: black !important;
+  list-style: armenian !important;
+}
+
+section {
+  margin-bottom: 5vh;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .col {
+    width: 50% !important;
+  }
+  .nav-link, .active {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20vw;
+    margin-left: 5vw;
+  }
+  h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  a {
+    color: goldenrod !important;
+  }
+  nav {
+    font-size: xx-large !important;
+    font-family: "Benne", serif;
+  }
+  ul {
+    margin: auto !important;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1600px) and (min-width: 1920px) {
+  .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20vw;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-right: 20vw;
+    margin-left: 18vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
